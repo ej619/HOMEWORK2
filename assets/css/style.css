@@ -50,4 +50,84 @@ a {
     font-size: 24px;
 }
 
+.main {
+    position: relative;
+    top: 200px;
+    
+}
+
+h2,h3 {
+    position: relative;
+    color: rgb(75, 70, 70);
+    font-size: 40px;
+    left: 50px;
+}
+
+
+.vl {
+    border-left: 6px solid rgb(116, 199, 199);;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    margin-left: 3px;
+    top: 0px;
+}
+
+.vl2 {
+    border-left: 6px solid rgb(116, 199, 199);
+    height: 100px;
+    position: relative;
+    left: 200px;
+    margin-left: 3px;
+    bottom: 125px;
+}
+
+p {
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+    left:250px;
+    bottom:125px;
+}
+
+.surf{
+    position: relative;
+    left: 300px;
+    bottom: 225px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+   
+  }
+
+.grid-container {
+    position: relative;
+    left: 300px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto;
+    width: 100px;
+    bottom: 225px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  
+
+
+
+ 
+
+
+
+
+
 
