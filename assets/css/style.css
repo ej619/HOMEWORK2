@@ -1,133 +1,103 @@
 .header {
-    justify-content: space-between;
-    background: #13293D;
-    color: #fff;
-}
-
-.header h1 {
-    display: inline-block;
-    vertical-align: middle;
-    color:rgb(75, 70, 70);
-    position: relative;
-    background-color: rgb(116, 199, 199);
-    padding-left: 50px;
-}
-
-.header nav {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header nav ul {
-    list-style-type: none;
-}
-
-.header nav ul li {
-    position: relative;
-    display: inline-block;
-    margin-right: 25px;
-    left:1200px
-}
-
-a {
-    color: turquoise;
-}
-
-.image {
-    width: 2000px;
     height: 200px;
-    overflow: hidden;
-    position: absolute;
-    text-align: center;
-    color: orange;
-    
-}
-.bottom-left {
-    position: absolute;
-    top: 125px;
-    left: 1500px;
-    background-color: rgb(116, 199, 199);
-    font-size: 24px;
-}
-
-.main {
-    position: relative;
-    top: 200px;
+    background: url('./02-hero-bg.jpg') no-repeat center center;
     
 }
 
-h2,h3 {
-    position: relative;
-    color: rgb(75, 70, 70);
-    font-size: 40px;
-    left: 50px;
+.header-nav {
+    display: flex;
+    background-color: teal;
+    justify-content: space-between;
+}
+.header-nav nav ul {
+    display: flex;
+    list-style: none;
+ 
+}
+
+.header-nav nav ul li {
+    margin-right: 10px;  
+}
+
+section {
+    display: flex;
+    min-height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+#about-me {
+    height: 200px;
 }
 
 
 .vl {
-    border-left: 6px solid rgb(116, 199, 199);;
-    height: 100px;
+    background-color: black;
+    width: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.images {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.large-image-wrapper {
+    border: 3px solid white;
+    height: 500px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.title {
     position: absolute;
-    left: 200px;
-    margin-left: 3px;
-    top: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: aquamarine;
+    padding: 10px;
 }
 
-.vl2 {
-    border-left: 6px solid rgb(116, 199, 199);
-    height: 100px;
-    position: relative;
-    left: 200px;
-    margin-left: 3px;
-    bottom: 125px;
+.large-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-p {
-    position: relative;
-    display: inline-block;
-    margin-right: 100px;
-    left:250px;
-    bottom:125px;
+.small-images {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
 }
 
-.surf{
-    position: relative;
-    left: 300px;
-    bottom: 225px;
+.small-image {
+    border: 5px solid white;
+    flex-grow: 1;
+    height: 520px;
+    object-fit: cover;
 }
 
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 5px;
-    font-size: 30px;
-   
-  }
+h1,h2 {
+    color:black;
+    font-size: 45px;
+}
 
-.grid-container {
-    position: relative;
-    left: 300px;
-    display: grid;
-    text-align: center;
-    grid-template-columns: auto auto;
+.my-pic {
+    display: flex;
+    position: absolute;
+    height: auto;
     width: 100px;
-    bottom: 225px;
-  }
-  
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    font-size: 30px;
-  }
-
-  
-
-
-
  
+}
 
-
-
-
-
-
+.about-me {
+    margin-left:125px;
+}
