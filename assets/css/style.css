@@ -71,18 +71,24 @@ section h2 {
     object-fit: cover;
 }
 
-.small-images {
+.small-images-wrapper {
     display: flex;
     flex-grow: 1;
+    flex-direction: row;
     flex-wrap: wrap;
     
 }
 
-.small-image {
-    border: 5px solid white;
+.small-images {
+    border: 3px;
     flex-grow: 1;
-    height: 520px;
-    object-fit: cover;
+    object-fit: contain;
+    width: 30rem;
+    position: relative;
+}
+
+.small-image {
+ width: 100%;
 }
 
 h1,h2 {
@@ -90,14 +96,21 @@ h1,h2 {
     font-size: 45px;
 }
 
-.my-pic {
-    display: flex;
-    position: absolute;
-    height: auto;
-    width: 100px;
- 
-}
-
 .about-me {
     margin-left:125px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+#contact-me {
+    display: flex;
+    align-items: center;
 }
